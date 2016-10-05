@@ -98,7 +98,7 @@ gulp.task('js-hint', function() {
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
-//this is the task that combines your js files
+//this is the task that combines your js files- probably not very useful with the current setup that includes local bootstrap and jquery with custom js in the same subdirectory
 gulp.task('concat-js', function(){
     // the string you input will become the name of the concatenated file that you will use in the production version
     console.log("This is the src: " + jsSources);
@@ -138,7 +138,7 @@ gulp.task('watcher', function() {
 });
 
 //Compress html, js, and css
-gulp.task('compress', ['js-concat', 'minify-css', 'minify-html']);
+gulp.task('compress', ['minify-css', 'minify-html']);
 
 //The 'default' task runs everytime you just run 'gulp' on the command line. It's good for having tasks execute when you are working on a project.
 gulp.task('default', ['watcher', 'sass', 'typescript', 'webserver']);

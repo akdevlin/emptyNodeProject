@@ -1,5 +1,5 @@
 # emptyNodeProject
-A repository for when you start a new project using Node.js. Starting from scratch with a little help from Bootstrap, jQuery, Sass, and Gulp.
+A repository for when you start a new project using Node.js and Gulp. Starting from scratch with a little help from Bootstrap, jQuery, Sass, and Typescript.
 
 ### commands
 sudo // "super user do"? highest level permission
